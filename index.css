@@ -20,8 +20,8 @@
 }
 .res-card{
     width:200px;
-    height: 350px;
-    max-height: 350px;
+    height: 360px;
+    max-height: 360px;
     padding:5px;
     margin:5px;
 
@@ -46,4 +46,26 @@
 .filter-btn{
     margin:10px;
     cursor: pointer;
+    margin-left:20px;
+}
+.shimmer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    margin:20px;
+    width: 200px;
+    height:400px;
+    background-color: #f0f0f0;
+}
+.login{
+    padding:0 20px;
+    cursor: pointer;
+}
+.filter{
+    display: flex;
+}
+.search-box{
+    margin-top: 10px;
 }
