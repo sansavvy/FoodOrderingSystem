@@ -29,7 +29,20 @@ const Body = () => {
     setFilteredRestaurants(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+    console.log(listOfRestaurants);
   };
+
+  // const updateData = async ()=>{
+  //   await fetch("https://www.swiggy.com/dapi/restaurants/list/update",
+  //   {
+  //     method: 'POST',
+  //     headers: {
+  //       'Accept': 'application/json',
+  //       'Content-Type': 'application/json'
+  //     },
+  //     // body: JSON.stringify({a: 1, b: 'Textual content'})
+  //   })
+  // }
 
   //Conditional Rendering using ternary operator
   return listOfRestaurants.length === 0 ? (

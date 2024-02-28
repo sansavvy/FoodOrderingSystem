@@ -39,4 +39,7 @@ import {Component} from "path";
 - written by facebook/meta developers
 - where did they write this? Inside React Lib.
 - useState() -superpowerful state variable
-- useEffect()
+- useEffect() - to connect our app to external s/m.
+  -no dependency array -> called on every render of the component
+  -empty dependency array - > called on initial render (juz once)
+  -dependency added -> called everytime any state variable within component updated.
