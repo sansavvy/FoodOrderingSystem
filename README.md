@@ -1,24 +1,8 @@
-# Sample React Project
 
-# Namastae Food
 
-/\*\*
+# Food Ordering App
 
-- Header
-- - Logo
-- -Nav Items
-- Body
-- - Search
-- - RestaurantContainer
-- - RestaurantCard
-- -Img
-- -Name of Res, Star-Rating, Cuisine, delivery time
-- Footer
-- - Copyright
-- - Links
-- - Address
-- -Contact
-  \*/
+Self learning notes
 
 Two types of Export/Import
 
