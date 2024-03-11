@@ -1,5 +1,3 @@
-
-
 # Food Ordering App
 
 Self learning notes
@@ -32,3 +30,11 @@ import {Component} from "path";
 
 - Client Side Routing
 - Server Side Routing
+
+# React's lifecycle methods diagram
+
+![lifecyclemethodsdiagram](image.png)
+
+# Lifecycle methods workflow
+
+Constructor called ->State variable(dummy data) -> Render the component (dummy data ->Component did mount(API call) ->this.setState()[Updates state variable with API data]) |Mounting phase finishes|Update phase begins | ->render the component(API data) ->HTML loaded(DOM updated with API data) -> ComponentDidUpdate(called) | Update phase end| Unmount phase begins| -> ComponentWillUnMount
