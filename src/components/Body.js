@@ -2,6 +2,7 @@ import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
   //Local State variable  - super powerful variable
   const [listOfRestaurants, setListOfRestaurant] = useState([]);
@@ -10,7 +11,6 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   // Whenever state variable updates/modifies, react triggers a reconciliation cycle(re-renders the component(body component)) but it updates only the input element alone.
-  console.log("Body Rendered");
 
   useEffect(() => {
     fetechData();
@@ -33,17 +33,11 @@ const Body = () => {
     console.log(listOfRestaurants);
   };
 
-  // const updateData = async ()=>{
-  //   await fetch("https://www.swiggy.com/dapi/restaurants/list/update",
-  //   {
-  //     method: 'POST',
-  //     headers: {
-  //       'Accept': 'application/json',
-  //       'Content-Type': 'application/json'
-  //     },
-  //     // body: JSON.stringify({a: 1, b: 'Textual content'})
-  //   })
-  // }
+  const OnlineStatus = useOnlineStatus();
+  if (OnlineStatus === false)
+    return (
+      <h1>Looks you're Offline !! Please check your internet connection;</h1>
+    );
 
   //Conditional Rendering using ternary operator
   return listOfRestaurants.length === 0 ? (
