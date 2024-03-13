@@ -6,7 +6,7 @@ export const User = (props) => {
 
   useEffect({}, []);
   return (
-    <div className="user-card">
+    <div className="m-4 p-4 bg-teal-200">
       <h1>Count:{count}</h1>
       <h1>CountFNC:{count2}</h1>
       <h2>Name: {props.name}</h2>
