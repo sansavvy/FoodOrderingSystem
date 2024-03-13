@@ -76,3 +76,14 @@ Constructor called ->State variable(dummy data) -> Render the component (dummy d
 - Ondemand loading
 - Lazy loading
 - Dynamic Import
+
+# style the App using libraries and frameworks
+
+all these below lib does the same work. Make informed decision as per your requirements.
+
+- Material UI
+- Chakra UI
+- Tailwind css
+- bootstrap
+- Ant Design - 2nd most popular React UI Lib
+- Styled Components in React
