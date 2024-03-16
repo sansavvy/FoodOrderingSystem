@@ -87,3 +87,31 @@ all these below lib does the same work. Make informed decision as per your requi
 - bootstrap
 - Ant Design - 2nd most popular React UI Lib
 - Styled Components in React
+
+# Higher Order Components
+
+- functions that takes component as i/p and modifies/enhances the component and returns a new component
+- Higher order components are pure functions(it'wont modify or change the behaviour of i/p component directly)
+
+# Controlled and UnControlled Components
+
+- If the child component's state is controlled by parent and not on it's own is called controlled components.
+- The child component state has been controlled and managed on it's own and parent has no effect over it is called uncontrolled components.
+
+# How can a child component modifies the state variables of the parent?
+
+- not directly but indirectly by a concept called Lifting state up.
+
+# Props Drilling
+
+- process of passing down data or state through multiple layers of component hierarchy
+- necessary to maintain Application state but is an issue for complex App(to pass props 10 lvl deep)
+- This can be avoided by React Context (good way to centralize data)
+
+# React Context
+
+- when using redux, no need of context in React's App.
+- no need of external data management libraries/ state management libraries
+- useContext(),
+- <UserContext.Consumer> - used inside class based components.
+- <UserContext.Provider> - override the default values of the context
