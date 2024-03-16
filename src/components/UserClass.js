@@ -11,7 +11,7 @@ class UserClass extends React.Component {
       },
     };
 
-    console.log("child constructor");
+    // console.log("child constructor");
   }
 
   async componentDidMount() {
@@ -24,21 +24,19 @@ class UserClass extends React.Component {
       userInfo: user,
     });
 
-    console.log(user);
+    // console.log(user);
   }
 
   componentDidUpdate() {
-    console.log("component did update");
+    // console.log("component did update");
   }
 
   componentWillUnmount() {
-    console.log("component will Unmount");
+    // console.log("component will Unmount");
   }
   render() {
     const { name, location } = this.state.userInfo;
 
-    console.log("child render");
-    debugger;
     return (
       <div className="m-4 p-4 w-[250px] bg-teal-100 rounded-lg">
         <img
