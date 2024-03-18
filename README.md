@@ -115,3 +115,27 @@ all these below lib does the same work. Make informed decision as per your requi
 - useContext(),
 - <UserContext.Consumer> - used inside class based components.
 - <UserContext.Provider> - override the default values of the context
+
+# Redux ToolKit
+
+- Install @reduxjs/toolkit and react-redux
+- Build our own store
+- connect our store to our App
+- Slice (cartSlice)
+- dispatch(action)
+- Selector
+
+# Redux - Architecture & how it works
+
+![alt text](image-1.png)
+
+- Redux store - A big obj to keep App data in central global place.
+- Redux Slices - a small portion of redux store
+- To modify/update slice data, we've to dispatch an action which calls the reducer fucntion which updates the slice of redux store.
+- How to read data from Slice? Using 'Selectors' - the phenomenon is called as 'Subscribing to the store'
+- ConfigureStore - to configure a store(@reduxjs/toolkit) | Provider - providing the store to react App(react-redux)
+- Actions - Kind of API to communicate with Redux store
+- Reducer Function - mutating the state in Slice's func
+- useSelector hook - responsible for selecting a part of redux store's state/computing derived data.
+- useDispatch hook - to dispatch actions
+- redux dev tools, Immer Lib, RTK Query
