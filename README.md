@@ -139,3 +139,22 @@ all these below lib does the same work. Make informed decision as per your requi
 - useSelector hook - responsible for selecting a part of redux store's state/computing derived data.
 - useDispatch hook - to dispatch actions
 - redux dev tools, Immer Lib, RTK Query
+
+# Testing the React App
+
+- 3 types of testing that developer can do
+  a) Unit Testing - testing in Isolation
+  b) Integration Testing -testing b/w integration of the components
+  c) End to End Testing (E2E) - entire application testing
+
+# Settings up Testing in our App
+
+- Install React Testing Library
+- Install jest
+- Install Babel dependencies
+- Configure Babel
+- Configure Parcel config file to disable Default babel transpilation
+- Jest - npx jest --init
+- Install JsDom Library
+- Install @babel/preset-react - to make jsx work in test cases
+- Include @babel/preset-react inside my babel config
